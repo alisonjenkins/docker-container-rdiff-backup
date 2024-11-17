@@ -11,5 +11,7 @@ ADD list-backups.sh /bin/list-backups
 RUN chmod +x /bin/list-backups
 ADD restore-backup.sh /bin/restore-backup
 RUN chmod +x /bin/restore-backup
+ADD backup-server.sh /bin/backup-server
+RUN chmod +x /bin/backup-server
 ADD bashrc /root/.bashrc
 ENTRYPOINT [ "/bin/entrypoint" ]
