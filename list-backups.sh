@@ -1,2 +1,2 @@
 #!/bin/sh
-rdiff-backup list increments /mnt/backups
+rdiff-backup --api-version 201 list increments /mnt/backups
